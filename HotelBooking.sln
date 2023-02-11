@@ -28,6 +28,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapters", "Adapters", "{AE625154-058C-4168-9811-9693BB90826D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainTests", "BookingService\Tests\DomainTests\DomainTests.csproj", "{3DB1AFDE-763C-4247-9388-556240FA1FC2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1A384859-E112-4C0E-9B62-B786B9C44482} = {1A384859-E112-4C0E-9B62-B786B9C44482}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationTests", "BookingService\Tests\ApplicationTests\ApplicationTests.csproj", "{2BF988B9-82BF-46C4-9FA1-F2200B12F6DB}"
 EndProject
