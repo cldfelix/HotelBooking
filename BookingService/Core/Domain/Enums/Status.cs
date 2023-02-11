@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Domain.Enums
 {
-    internal class Status
+    public enum Status
     {
+        Created,
+        Paid,
+        Finished,
+        Canceled,
+        Refounded
     }
 }

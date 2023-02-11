@@ -9,7 +9,7 @@
         public bool HasGuest { get { return true; } }
         public bool IsAvalilable
         {
-            get { return InMaintenance || HasGuest ? false : true; }
+            get { return InMaintenance != true && HasGuest != true; }
         }
     }
 }

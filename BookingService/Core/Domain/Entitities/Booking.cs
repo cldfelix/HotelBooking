@@ -4,6 +4,10 @@ namespace Domain.Entitities
 {
     public class Booking
     {
+        public Booking()
+        {
+            Status= Status.Created;
+        }
         public Guid? Id { get; set; }
         public DateTime Start { get; set; }
         public DateTime End { get; set; }
