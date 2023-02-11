@@ -11,6 +11,8 @@ namespace Domain.Entitities
         public Guid? Id { get; set; }
         public DateTime Start { get; set; }
         public DateTime End { get; set; }
+        public Room Room { get; set; }
+        public Guest Guest { get; set; }
         private Status Status { get; set; }
         public Status GetCurretStaus { get { return Status; } }
 

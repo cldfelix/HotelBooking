@@ -10,5 +10,13 @@ namespace Data
         DbSet<Guest> Guests { get; set; }
         DbSet<Booking> Bookings { get; set; }
         DbSet<Room> Rooms { get; set; }
+
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new GestConfiguration());
+            modelBuilder.ApplyConfiguration(new RoomConfiguration());
+        }
+
     }
 }
